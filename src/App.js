@@ -8,6 +8,12 @@ import ProductPage from "./product";
 function App() {
   return (
     <div>
+        <div id="header">
+        <div id="header-area">
+            <img src="/images/icons/logo.png" />
+        </div>
+    </div>
+    <div id="body">
       <Switch>
         <Route exact={true} path="/">
           <MainPageComponent />
@@ -19,6 +25,8 @@ function App() {
         <UploadPage />
         </Route>
       </Switch>
+      </div>
+    <div id="footer"></div>
     </div>
   );
 }
